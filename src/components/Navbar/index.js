@@ -7,13 +7,14 @@ import {
   NavbarBtnLink,
   Bars,
 } from './NavbarElements'
+import Ed from '../../images/myPicture.png';
 
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavLink to="/">
-          <h1>Logo</h1>
+          <img src={ Ed } alt="ed" height={50} />
         </NavLink>
         <Bars />
         <NavMenu>
