@@ -11,7 +11,7 @@ class About extends React.Component {
           height: '80vh',
         }}
       >
-        <h1>Hi, i'm Edmilson.</h1>
+        <h1>Hi, I'm Edmilson.</h1>
       </div>
     );
   }
