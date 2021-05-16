@@ -7,14 +7,22 @@ import {
   NavbarBtnLink,
   Bars,
 } from './NavbarElements'
-import Ed from '../../images/myPicture.png';
+import { DiGithubBadge } from 'react-icons/di';
+import Ed from '../../images/myPicture.svg';
 
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavLink to="/">
-          <img src={ Ed } alt="ed" height={50} />
+          <img
+            src={ Ed }
+            alt="ed"
+            height={50}
+            style={{
+              borderRadius: '50%',
+            }}  
+          />
         </NavLink>
         <Bars />
         <NavMenu>
@@ -32,8 +40,13 @@ const Navbar = () => {
           <NavbarBtnLink
             href="https://github.com/EdmilsonBernardo"
             target="_blank"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
           >
-            GitHub
+            GitHub <DiGithubBadge />
           </NavbarBtnLink>
         </NavBtn>
       </Nav>

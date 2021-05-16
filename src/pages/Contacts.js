@@ -12,6 +12,8 @@ class Contacts extends React.Component {
         }}
       >
         <h1>My contacts</h1>
+        <section>
+        </section>
       </div>
     );
   } 
