@@ -8,20 +8,18 @@ import {
   Bars,
 } from './NavbarElements'
 import { DiGithubBadge } from 'react-icons/di';
-import Ed from '../../images/myPicture.svg';
+import { FaHome } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavLink to="/">
-          <img
-            src={ Ed }
-            alt="ed"
-            height={50}
+          <FaHome
             style={{
-              borderRadius: '50%',
-            }}  
+              width: '40px',
+              height: '40px',
+            }}
           />
         </NavLink>
         <Bars />
@@ -31,6 +29,9 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="/projects" activeStyle>
             Projects
+          </NavLink>
+          <NavLink to="/skills" activeStyle>
+            Skills
           </NavLink>
           <NavLink to="/contacts" activeStyle>
             Contacts
@@ -46,7 +47,13 @@ const Navbar = () => {
               alignItems: 'center',
             }}
           >
-            GitHub <DiGithubBadge />
+            GitHub
+            <DiGithubBadge
+              style={{
+                width: '20px',
+                height: '20px',
+              }}
+            />
           </NavbarBtnLink>
         </NavBtn>
       </Nav>
