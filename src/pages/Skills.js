@@ -1,24 +1,25 @@
 import React from 'react';
-import EmailForm from '../components/EmailForm';
+import SkillsBoard from '../components/SkillsBoard';
 
-class Contacts extends React.Component {
+class Skills extends React.Component {
   render() {
     return (
       <div
         style={{
           display: 'flex',
+          flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
           height: '80vh',
         }}
       >
-        <h1>My contacts</h1>
+        <h1>My skills</h1>
         <section>
-          <EmailForm />
+          <SkillsBoard />
         </section>
       </div>
     );
-  } 
+  }
 }
 
-export default Contacts;
+export default Skills;
