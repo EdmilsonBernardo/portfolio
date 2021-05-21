@@ -1,0 +1,21 @@
+.section-skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 130px;
+}
+
+.skills-icons {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    animation: ease-in;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.skills-icons:hover {
+    transform: scale(1.1);
+    width: 130px;
+    height: 130px;
+}
