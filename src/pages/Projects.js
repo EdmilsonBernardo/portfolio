@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../components/ProjectCard';
 import Img1 from '../images/imgProject1.png';
 import Img2 from '../images/imgProject2.png';
+import Img3 from '../images/imgProject3.png';
 
 class Projects extends React.Component {
   render() {
@@ -32,6 +33,11 @@ class Projects extends React.Component {
             title="Asynchronous Jest and Mocking"
             body="Asynchronous function tests using Jest and Mock."
             imageUrl={Img2}
+          />
+          <Card
+            title="Shopping Cart"
+            body="Project that simulates operations in a shopping cart"
+            imageUrl={Img3}
           />
         </section>
       </div>
