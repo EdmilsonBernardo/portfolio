@@ -7,6 +7,7 @@ class Contacts extends React.Component {
       <div
         style={{
           display: 'flex',
+          flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
           height: '80vh',

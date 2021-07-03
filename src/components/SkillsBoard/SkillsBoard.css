@@ -15,7 +15,6 @@
 }
 
 .skills-icons:hover {
-    transform: scale(1.1);
     width: 130px;
     height: 130px;
 }
